@@ -1,0 +1,4 @@
+inherit pygtk
+
+HOMEPAGE="http://www.clutter-project.org/"
+SRC_URI="http://folks.o-hand.com/~ebassi/sources/${ORIG_PN}-${PV}.tar.gz"
