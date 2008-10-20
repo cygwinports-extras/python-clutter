@@ -1,0 +1,5 @@
+category: Gnome Python
+requires: cygwin glib2 gdk-pixbuf2 gtk2-x11 libcairo2 libclutter0.8_0 libclutter-cairo0.8_0 libclutter-gst0.8_0 libclutter-gtk0.8_0 pango python python-cairo python-gobject2 python-gstreamer010 python-gtk2
+sdesc: "Python Clutter bindings"
+ldesc: "This package contains the Python modules that allow you to use the
+Clutter toolkit in Python programs."
