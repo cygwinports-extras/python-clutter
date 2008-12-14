@@ -5,27 +5,27 @@ Clutter toolkit in Python programs.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  gdk-pixbuf2-2.12.12-1
-  glib2-2.16.6-1
-  gtk2-x11-2.12.12-1
-  libcairo2-1.6.4-2
-  libclutter0.8_0-0.8.2-1
+  libcairo2-1.8.4-1
+  libclutter0.8_0-0.8.4-1
   libclutter-cairo0.8_0-0.8.2-1
   libclutter-gst0.8_0-0.8.0-1
   libclutter-gtk0.8_0-0.8.2-1
-  pango-1.20.5-1
-  python-2.5.2-3
-  python-cairo-1.4.12-1
-  python-gobject2-2.14.2-1
+  libgdk_pixbuf2.0_0-2.14.5-1
+  libglib2.0_0-2.18.3-1
+  libgtk2.0_0-2.14.5-1
+  libpango1.0_0-1.22.3-1
+  python-2.5.2-4
+  python-cairo-1.6.4-1
+  python-gobject2-2.15.4-1
   python-gstreamer010-0.10.13-1
-  python-gtk2-2.12.1-1
+  python-gtk2-2.13.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-1
-  automake1.10-1.10.1-1
+  automake1.10-1.10.1-2
   binutils-20080624-2
-  cygport-0.4.1-1
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   libtool-2.2.6a-1
@@ -42,15 +42,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-clutter-0.8.0-X-src.tar.bz2
+  unpack python-clutter-0.8.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-clutter-0.8.0-X.cygport all
+  cygport ./python-clutter-0.8.2-X.cygport all
 
 This will create:
-  /usr/src/python-clutter-0.8.0-X-src.tar.bz2
-  /usr/src/python-clutter-0.8.0-X.tar.bz2
+  /usr/src/python-clutter-0.8.2-X-src.tar.bz2
+  /usr/src/python-clutter-0.8.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -84,12 +84,12 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/cluttergtk/__init__.pyo
   /usr/lib/python2.5/site-packages/cluttergtk/_cluttergtk.dll
   /usr/lib/python2.5/site-packages/cluttergtk/_cluttergtk.la
-  /usr/share/doc/python-clutter-0.8.0/AUTHORS
-  /usr/share/doc/python-clutter-0.8.0/COPYING
-  /usr/share/doc/python-clutter-0.8.0/ChangeLog
-  /usr/share/doc/python-clutter-0.8.0/INSTALL
-  /usr/share/doc/python-clutter-0.8.0/NEWS
-  /usr/share/doc/python-clutter-0.8.0/README
+  /usr/share/doc/python-clutter-0.8.2/AUTHORS
+  /usr/share/doc/python-clutter-0.8.2/COPYING
+  /usr/share/doc/python-clutter-0.8.2/ChangeLog
+  /usr/share/doc/python-clutter-0.8.2/INSTALL
+  /usr/share/doc/python-clutter-0.8.2/NEWS
+  /usr/share/doc/python-clutter-0.8.2/README
   /usr/share/pyclutter/1.0/defs/clutter-base-types.defs
   /usr/share/pyclutter/1.0/defs/clutter-base.defs
   /usr/share/pyclutter/1.0/defs/clutter-types.defs
@@ -105,6 +105,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.8.2-1 -----
+Version bump.
 
 ----- version 0.8.0-1 -----
 Initial release for Cygwin.

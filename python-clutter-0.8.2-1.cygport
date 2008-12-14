@@ -3,3 +3,5 @@ inherit pygtk
 
 HOMEPAGE="http://www.clutter-project.org/"
 SRC_URI="http://www.clutter-project.org/sources/${ORIG_PN}/${PV_MAJ_MIN}/${ORIG_PN}-${PV}.tar.gz"
+
+MAKEOPTS+=" -j1"
