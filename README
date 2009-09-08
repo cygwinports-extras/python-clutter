@@ -4,33 +4,28 @@ This package contains the Python modules that allow you to use the
 Clutter toolkit in Python programs.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libcairo2-1.8.4-1
-  libclutter0.8_0-0.8.4-1
-  libclutter-cairo0.8_0-0.8.2-1
-  libclutter-gst0.8_0-0.8.0-1
-  libclutter-gtk0.8_0-0.8.2-1
-  libgdk_pixbuf2.0_0-2.14.5-1
-  libglib2.0_0-2.18.3-1
-  libgtk2.0_0-2.14.5-1
-  libpango1.0_0-1.22.3-1
-  python-2.5.2-4
-  python-cairo-1.6.4-1
-  python-gobject2-2.15.4-1
-  python-gstreamer010-0.10.13-1
-  python-gtk2-2.13.0-1
+  cygwin-1.7.0-60
+  libcairo2-1.8.8-1
+  libclutter1.0_0-1.0.2-1
+  libgcc1-4.3.2-2
+  libglib2.0_0-2.20.5-1
+  libpango1.0_0-1.24.5-1
+  python-2.5.4-10
+  python-cairo-1.8.6-1
+  python-gobject2.0-2.18.0-1
+  python-gtk2.0-2.16.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
-  binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  libtool-2.2.6a-1
-  make-3.81-1
-  pkg-config-0.23a-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.2-10
+  binutils-2.19.51-1
+  cygport-0.9.9-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-14
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -42,22 +37,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-clutter-0.8.2-X-src.tar.bz2
+  unpack python-clutter-1.0.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-clutter-0.8.2-X.cygport all
+  cygport ./python-clutter-1.0.0-X.cygport all
 
 This will create:
-  /usr/src/python-clutter-0.8.2-X-src.tar.bz2
-  /usr/src/python-clutter-0.8.2-X.tar.bz2
+  /usr/src/python-clutter-1.0.0-X-src.tar.bz2
+  /usr/src/python-clutter-1.0.0-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/include/pyclutter-1.0/pyclutter/pyclutter.h
-  /usr/lib/pkgconfig/pyclutter-0.8.pc
+  /usr/lib/pkgconfig/pyclutter-1.0.pc
   /usr/lib/python2.5/site-packages/clutter/__init__.py
   /usr/lib/python2.5/site-packages/clutter/__init__.pyc
   /usr/lib/python2.5/site-packages/clutter/__init__.pyo
@@ -69,27 +64,55 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/clutter/keysyms.py
   /usr/lib/python2.5/site-packages/clutter/keysyms.pyc
   /usr/lib/python2.5/site-packages/clutter/keysyms.pyo
-  /usr/lib/python2.5/site-packages/cluttercairo/__init__.py
-  /usr/lib/python2.5/site-packages/cluttercairo/__init__.pyc
-  /usr/lib/python2.5/site-packages/cluttercairo/__init__.pyo
-  /usr/lib/python2.5/site-packages/cluttercairo/_cluttercairo.dll
-  /usr/lib/python2.5/site-packages/cluttercairo/_cluttercairo.la
-  /usr/lib/python2.5/site-packages/cluttergst/__init__.py
-  /usr/lib/python2.5/site-packages/cluttergst/__init__.pyc
-  /usr/lib/python2.5/site-packages/cluttergst/__init__.pyo
-  /usr/lib/python2.5/site-packages/cluttergst/_cluttergst.dll
-  /usr/lib/python2.5/site-packages/cluttergst/_cluttergst.la
-  /usr/lib/python2.5/site-packages/cluttergtk/__init__.py
-  /usr/lib/python2.5/site-packages/cluttergtk/__init__.pyc
-  /usr/lib/python2.5/site-packages/cluttergtk/__init__.pyo
-  /usr/lib/python2.5/site-packages/cluttergtk/_cluttergtk.dll
-  /usr/lib/python2.5/site-packages/cluttergtk/_cluttergtk.la
-  /usr/share/doc/python-clutter-0.8.2/AUTHORS
-  /usr/share/doc/python-clutter-0.8.2/COPYING
-  /usr/share/doc/python-clutter-0.8.2/ChangeLog
-  /usr/share/doc/python-clutter-0.8.2/INSTALL
-  /usr/share/doc/python-clutter-0.8.2/NEWS
-  /usr/share/doc/python-clutter-0.8.2/README
+  /usr/share/doc/python-clutter/AUTHORS
+  /usr/share/doc/python-clutter/COPYING
+  /usr/share/doc/python-clutter/ChangeLog
+  /usr/share/doc/python-clutter/NEWS
+  /usr/share/doc/python-clutter/README
+  /usr/share/gtk-doc/html/pyclutter/ch01.html
+  /usr/share/gtk-doc/html/pyclutter/ch02.html
+  /usr/share/gtk-doc/html/pyclutter/ch03.html
+  /usr/share/gtk-doc/html/pyclutter/ch04.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutteractor.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutteractorbox.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutteralpha.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterbehaviour.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterbehaviourdepth.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterbehaviourellipse.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterbehaviouropacity.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterbehaviourpath.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterbehaviourrotate.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterbehaviourscale.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterchildmeta.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterclonetexture.html
+  /usr/share/gtk-doc/html/pyclutter/class-cluttercolor.html
+  /usr/share/gtk-doc/html/pyclutter/class-cluttercontainer.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterevent.html
+  /usr/share/gtk-doc/html/pyclutter/class-cluttergeometry.html
+  /usr/share/gtk-doc/html/pyclutter/class-cluttergroup.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterknot.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterlistmodel.html
+  /usr/share/gtk-doc/html/pyclutter/class-cluttermedia.html
+  /usr/share/gtk-doc/html/pyclutter/class-cluttermodel.html
+  /usr/share/gtk-doc/html/pyclutter/class-cluttermodeliter.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterrectangle.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterscore.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterscript.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterscriptable.html
+  /usr/share/gtk-doc/html/pyclutter/class-cluttershader.html
+  /usr/share/gtk-doc/html/pyclutter/class-clutterstage.html
+  /usr/share/gtk-doc/html/pyclutter/class-cluttertext.html
+  /usr/share/gtk-doc/html/pyclutter/class-cluttertexture.html
+  /usr/share/gtk-doc/html/pyclutter/class-cluttertimeline.html
+  /usr/share/gtk-doc/html/pyclutter/class-cluttervertex.html
+  /usr/share/gtk-doc/html/pyclutter/index.html
+  /usr/share/gtk-doc/html/pyclutter/index.sgml
+  /usr/share/gtk-doc/html/pyclutter/pt01.html
+  /usr/share/gtk-doc/html/pyclutter/pt02.html
+  /usr/share/gtk-doc/html/pyclutter/pt03.html
+  /usr/share/gtk-doc/html/pyclutter/pt04.html
+  /usr/share/gtk-doc/html/pyclutter/pyclutter.devhelp
+  /usr/share/gtk-doc/html/pyclutter/style.css
   /usr/share/pyclutter/1.0/defs/clutter-base-types.defs
   /usr/share/pyclutter/1.0/defs/clutter-base.defs
   /usr/share/pyclutter/1.0/defs/clutter-types.defs
@@ -98,19 +121,13 @@ Files included in the binary package:
   /usr/share/pyclutter/1.0/defs/cogl-base.defs
   /usr/share/pyclutter/1.0/defs/cogl-types.defs
   /usr/share/pyclutter/1.0/defs/cogl.defs
-  /usr/share/pyclutter/defs/cluttercairo.defs
-  /usr/share/pyclutter/defs/cluttergst.defs
-  /usr/share/pyclutter/defs/cluttergtk.defs
 
 ------------------
 
 Port Notes:
 
------ version 0.8.2-1 -----
-Version bump.
-
------ version 0.8.0-1 -----
-Initial release for Cygwin.
+----- version 1.0.0-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

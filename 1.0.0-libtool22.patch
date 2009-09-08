@@ -1,0 +1,11 @@
+--- origsrc/pyclutter-1.0.0/configure.ac	2009-08-28 06:36:36.000000000 -0500
++++ src/pyclutter-1.0.0/configure.ac	2009-09-08 03:05:59.245712200 -0500
+@@ -42,6 +42,8 @@ AC_CANONICAL_HOST
+ AC_DISABLE_STATIC
+ AC_LIBTOOL_WIN32_DLL
+ AC_PROG_LIBTOOL
++dnl when using libtool 2.x create libtool early, because it's used in configure
++m4_ifdef([LT_OUTPUT], [LT_OUTPUT])
+ 
+ # uncomment in 0.7
+ AM_PATH_PYTHON(2.5.0,,[AC_MSG_ERROR([could not find Python 2.5.0])])
