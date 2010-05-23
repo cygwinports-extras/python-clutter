@@ -1,0 +1,17 @@
+--- origsrc/pyclutter-1.0.2/clutter/Makefile.am	2010-03-30 12:25:33.000000000 -0500
++++ src/pyclutter-1.0.2/clutter/Makefile.am	2010-05-23 14:54:06.191863200 -0500
+@@ -191,11 +191,12 @@ endif
+ 
+ # delete the old submodules, if any, to avoid collisions
+ install-data-local:
+-	(test -d $(DESTDIR)$(pyclutterexecdir) && \
++	(if test -d $(DESTDIR)$(pyclutterexecdir); then \
+ 	 cd $(DESTDIR)$(pyclutterexecdir) && \
+ 	 rm -f cluttercairo.so && \
+ 	 rm -f cluttergst.so && \
+-	 rm -f cluttergtk.so)
++	 rm -f cluttergtk.so ; \
++	 fi)
+ 
+ # this is a hack - do not remove
+ # this rule is needed to prevent generating clutter-types.c because
