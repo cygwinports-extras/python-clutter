@@ -3,7 +3,6 @@ inherit pygtk
 
 HOMEPAGE="http://www.clutter-project.org/"
 SRC_URI="http://www.clutter-project.org/sources/${ORIG_PN}/${PV_MAJ_MIN}/${ORIG_PN}-${PV}.tar.gz"
-PATCH_URI="1.0.0-libtool22.patch
-           1.0.0-install-data-hook.patch"
+PATCH_URI="1.0.0-libtool22.patch"
 
 ACLOCAL_FLAGS="-I build/autotools"
