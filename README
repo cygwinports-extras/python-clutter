@@ -6,7 +6,7 @@ Clutter toolkit in Python programs.
 Runtime requirements:
   cygwin-1.7.5-1
   libcairo2-1.8.10-1
-  libclutter1.0_0-1.0.10-1
+  libclutter1.0_0-1.2.8-1
   libgcc1-4.3.4-3
   libglib2.0_0-2.22.4-2
   libpango1.0_0-1.26.2-1
